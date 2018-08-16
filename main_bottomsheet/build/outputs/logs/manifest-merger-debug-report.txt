@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:2:1-6:12
+	package
+		ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:3:3-35
+		INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml
+		INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:1-39
+INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:1-39
+INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:1-39
+INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:1-39
+INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:1-39
+	android:targetSdkVersion
+		INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml
+		ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:1-39
+		INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:4:11-37
+		INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml
+		INJECTED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml
+application
+ADDED from /home/dev/Documents/Live/nass/main_bottomsheet/src/main/AndroidManifest.xml:5:5-19

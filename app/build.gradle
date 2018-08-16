@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "app.com.nass"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 4
+        versionName "1.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    /// support libs
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+
+    ///Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+
+    ///okhttp3
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    ///butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    /// dimensions
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+
+    /// picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    /// external
+    implementation 'com.android.support:multidex:1.0.3'
+
+    ///pdf-viewery
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    // round corneres of image
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    ///room
+    implementation "android.arch.persistence.room:runtime:1.0.0"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+
+    ///YouTubeAndroidPlayerApi
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+
+
+}

@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">eSenate NG</string>
+
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="new_version">A newer version of String Messenger is available would you like to update?</string>
+    <string name="cannot_connect_server">Cannot connect to server</string>
+    <string name="error">Something went wrong!</string>
+    <string name="internet">Internet connection not available!</string>
+    <string name="success">200</string>
+    <string name="invalid_access_token">420</string>
+    <string name="someone_logedin_some_other_device">Someone has logged in from same account from other device.</string>
+    <string name="someone_register_some_other_device">Someone else has registered with same Phone number/Email id.</string>
+    <string name="account_expired">Account Expired</string>
+    <string name="lorem_ipsum_small">lorem ipsum</string>
+
+    <string name="no_data">--</string>
+    <string name="Lorem_Ipsum_large">Lorem Ipsum dolor sit amet ipsu dolor sit ame </string>
+    <string name="Lorem_Ipsum_larger">Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum dolor sit amet ipsu dolor sit ame Lorem Ipsum dolor sit amet ipsu dolor sit ame </string>
+
+    <string name="title_activity_landing">LandingActivity</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    ///nass
+    <string name="bills">Bills</string>
+    <string name="search">Search</string>
+    <string name="acts">Acts</string>
+    <string name="committee">Committee</string>
+    <string name="committees">Committees</string>
+    <string name="live_streaming">Live Streaming</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="recent_activities_amp_events"><![CDATA[Recent Activities & Events]]></string>
+
+    <string name="recent_activities">Recent Activities</string>
+
+    <string name="senate_leadership">Senate Leadership</string>
+    <string name="about_the_senate">About the Senate</string>
+    <!--<string name="principal_officers">Principal Officers</string>-->
+    <string name="senator_details">Senator Details</string>
+    <string name="constitutional_roles">Constitutional Roles</string>
+    <string name="composition">Compositions</string>
+    <string name="tweets">Tweets</string>
+    <string name="live">Live \n Streaming</string>
+    <string name="profile">Profile</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="work_in_progress">work in progress</string>
+    <string name="file_format">This file format is not supported</string>
+    <string name="select_from_date">Please select From Date</string>
+
+    <string name="composition_dummy">There are 109 Senators in the Senate, 3 each from each of the 36 States of the Federation and 1 representing the Federal Capital Territory. However, irrespective of size, the Senate is based on equal representation of the States of the federation.\n\n
+The presiding officer of the Senate is the President of the Senate and is assisted by the Deputy President. There are other Principal Officers of the Senate which include: the Majority Leader, Chief Whip, Deputy Majority Leader, Deputy Chief Whip, Minority Leader, Minority Whip, Deputy Minority Leader and Deputy Minority Whip.\n\n
+In addition, there are 54 Standing Committees in the Senate chaired by Committee Chairmen.
+</string>
+    <string name="about_dummy">The Senate is one of the Chambers in Nigeria’s bicameral legislature, the National Assembly. The National Assembly (NASS) is the nation\'s highest legislature, whose power to make laws is summarized in chapter one, section four of the 1999 Nigerian Constitution.\n\n
+Sections 47-49 of the 1999 Constitution state inter alia that "There shall be a National Assembly (NASS) for the federation which shall consist of two chambers: the Senate and the House of Representatives".\n\n
+The Senate is headed by the President of the Senate assisted by the Deputy President of the Senate. These Presiding officers serve as political heads. There are one hundred and nine (109) members in the Senate corresponding to the 109 senatorial districts in the country. Senatorial Districts are evenly distributed among the thirty six states.  Each state has three senatorial districts while the Federal Capital Territory (FCT), Abuja has just one senatorial district.
+</string>
+
+    <string name="constitution_dummy">
+The Constitution has vested in the National Assembly the power to make laws for the peace, order and good governance of the Federation. The Assembly also has broad oversight functions and is therefore empowered to establish committees of its members to scrutinize bills and the conduct of government institutions and officials.\n\n
+The Constitution confers exclusive powers to the Senate among them the power to scrutinize and confirm major appointments of the executive. It is, however, specific about the appointments to be confirmed. They are those of the Ministers, Special Advisers, Ambassadors, top Judicial Officers heading specified levels of courts, the Auditor-General of the Federation, and the Chairmen and Members of the vital National Commissions.</string>
+
+    <string name="chairman">Chairman</string>
+    <string name="vice_chairman">Vice Chairman</string>
+    <string name="members">Members</string>
+    <string name="deputy_president_of_senate">Deputy President of Senate</string>
+    <string name="president_of_senate">President of Senate</string>
+    <string name="president">PRESIDENT</string>
+    <string name="deputy_president">Deputy president</string>
+    <string name="deputy">deputy</string>
+    <string name="constituency">Constituency</string>
+    <string name="state">State</string>
+    <string name="chamber">Chamber</string>
+    <string name="senate">Senate</string>
+    <string name="party">Party</string>
+    <string name="all_progressive_congress">All Progressive Congress(APC)</string>
+    <string name="sen_ike_ekweremadu">Sen. IKE.EKWEREMADU</string>
+    <string name="sen_bukola_abubakar_saraki">Sen. BUKOLA ABUBAKAR SARAKI</string>
+    <string name="activity_details">Activity Details</string>
+    <string name="filter">Filters</string>
+    <string name="dates">Dates</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="by_parliament_no">By Parliament no.</string>
+    <string name="parliament_number">Parliament Number</string>
+    <string name="session_number">Session Number</string>
+    <string name="by_session_no">by session no.</string>
+    <string name="apply">APPLY</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="senate_president">Senate President</string>
+    <string name="kwara_central">Kwara Central</string>
+    <string name="kwara_state">Kwara State</string>
+    <string name="contact">CONTACT</string>
+    <string name="email">Email</string>
+    <string name="constituency_address">Constituency Address</string>
+    <string name="constituency_phone">Constituency Phone</string>
+    <string name="show_more">SHOW MORE</string>
+    <string name="national_institute_for_legislative_studies_amendment_act_2017">NATIONAL INSTITUTE FOR LEGISLATIVE STUDIES(AMENDMENT)ACT,2017</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="loading">Loading...</string>
+    <string name="senate_passes_into_law_nation">Senate Passes into Law Nation</string>
+    <string name="education">EDUCATION</string>
+    <string name="previous_offices">PREVIOUS OFFICES</string>
+    <string name="achievementandawards">Achievements And Awards</string>
+    <string name="interest">Interests</string>
+    <string name="awards">Awards</string>
+    <string name="achievements">Achievements</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="full_name">Full Name</string>
+    <string name="send">SEND</string>
+    <string name="enter_request">Enter Request</string>
+    <string name="contact_senator">Contact Senator</string>
+    <string name="enter_your_concern">Enter your Concern:</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enter_full_name">Please enter full name</string>
+    <string name="enter_concern">Enter Your Concern</string>
+    <string name="deleted_file">This file has been deleted</string>
+
+</resources>

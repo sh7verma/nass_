@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/dev/Documents/Live/nass/main_bottomsheet/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/dev/Documents/Live/nass/main_bottomsheet/build/intermediates/bundles/debug/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,101,153",
+                        "endColumns": "45,51,51",
+                        "endOffsets": "96,148,200"
+                    },
+                    "to": {
+                        "startLines": "8,9,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "462,508,560",
+                        "endColumns": "45,51,51",
+                        "endOffsets": "503,555,607"
+                    }
+                },
+                {
+                    "source": "/home/dev/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/65286ee6cc0d7d4f40d18019ec4985fe/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,117,189,259,323,394",
+                        "endColumns": "61,71,69,63,70,67",
+                        "endOffsets": "112,184,254,318,389,457"
+                    }
+                }
+            ]
+        }
+    ]
+}

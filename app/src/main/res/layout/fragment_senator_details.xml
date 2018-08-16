@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/ll_search"
+        layout="@layout/search_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:splitMotionEvents="false">
+
+        <LinearLayout
+            android:id="@+id/ll_list_title"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <app.com.esenatenigeria.customviews.SemiboldTextView
+                android:id="@+id/txt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:text="@string/state"
+                android:textColor="@color/grey_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <app.com.esenatenigeria.customviews.SemiboldTextView
+                android:id="@+id/txt_constituency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:text="@string/constituency"
+                android:textColor="@color/grey_color"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_senator_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_list_title" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            android:indeterminateDuration="@integer/progress_speed" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_no_result" />
+
+            <app.com.esenatenigeria.customviews.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/no_result_found"
+                android:textColor="@color/grey_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

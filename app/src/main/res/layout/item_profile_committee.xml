@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <app.com.esenatenigeria.customviews.SemiboldTextView
+        android:id="@+id/txt_committee_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:text="@string/no_data"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <app.com.esenatenigeria.customviews.RegularTextView
+        android:id="@+id/txt_committee_position_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/no_data"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>

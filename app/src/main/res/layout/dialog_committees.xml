@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bts_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_white"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:cardPreventCornerOverlap="false"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_top_round_corner"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <app.com.esenatenigeria.customviews.BoldTextView
+                    android:id="@+id/txt_committee_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Agriculture"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/chairman"
+                    android:textColor="@color/grey_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <app.com.esenatenigeria.customviews.RegularTextView
+                    android:id="@+id/txt_chairman_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_data"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/vice_chairman"
+                    android:textColor="@color/grey_color"
+
+                    android:textSize="@dimen/_10sdp" />
+
+                <app.com.esenatenigeria.customviews.RegularTextView
+                    android:id="@+id/txt_vice_chairman_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_data"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_member_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/members"
+                    android:textColor="@color/grey_color"
+                    android:textSize="@dimen/_10sdp" />
+
+                <app.com.esenatenigeria.customviews.FlowLayout
+                    android:id="@+id/fl_interests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@mipmap/ic_cancel_com" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.com.esenatenigeria.customviews.SemiboldTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_12ssp"
+    android:padding="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</app.com.esenatenigeria.customviews.SemiboldTextView>

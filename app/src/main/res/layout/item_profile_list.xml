@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <app.com.esenatenigeria.customviews.SemiboldTextView
+            android:id="@+id/txt_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:text="@string/no_data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:id="@+id/txt_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/no_data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:id="@+id/txt_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:text="@string/no_data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

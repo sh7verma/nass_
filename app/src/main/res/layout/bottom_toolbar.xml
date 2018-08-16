@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red_dark"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+
+    android:weightSum="5">
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+    <!--android:id="@+id/btm_navigation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/red_dark"-->
+    <!--app:itemIconTint="@android:color/white"-->
+    <!--app:itemTextColor="@android:color/white"-->
+    <!--app:menu="@menu/bottom_navigation" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_home" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bills"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_bills" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bills"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_committee"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_committee" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/committees"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_acts"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_acts" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/acts"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_live"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_live" />
+
+        <app.com.esenatenigeria.customviews.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/live"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

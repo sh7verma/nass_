@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/transparent_white"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/white_corner_round"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <app.com.esenatenigeria.customviews.SemiboldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/contact_senator"
+            android:textColor="@color/red_dark"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/black_border">
+
+            <app.com.esenatenigeria.customviews.MaterialEditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/full_name"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:inputType="textCapSentences|text"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:met_hideUnderline="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/black_border">
+
+            <app.com.esenatenigeria.customviews.MaterialEditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="@string/email"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:met_hideUnderline="true" />
+        </LinearLayout>
+
+        <app.com.esenatenigeria.customviews.SemiboldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/enter_your_concern"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:met_hideUnderline="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/black_border"
+            android:orientation="vertical">
+
+            <app.com.esenatenigeria.customviews.MaterialEditText
+                android:id="@+id/ed_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="top"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:met_hideUnderline="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <app.com.esenatenigeria.customviews.SemiboldTextView
+                android:id="@+id/txt_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_round_corners_dark_grey"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/send"
+                android:textColor="@color/dark_green_color"
+                android:textSize="@dimen/_12ssp" />
+
+            <app.com.esenatenigeria.customviews.SemiboldTextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/background_round_corners_dark_grey"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:splitMotionEvents="false"
+    android:background="@color/light_grey"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp">
+
+            <app.com.esenatenigeria.customviews.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/senate_leadership"
+                android:textAllCaps="true"
+                android:textColor="@color/red_dark"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_president"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_president"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+
+                            android:src="@drawable/president"/>
+
+                        <View
+                            android:id="@+id/view_tint"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/tint_below" />
+
+
+                        <app.com.esenatenigeria.customviews.SemiboldTextView
+                            android:id="@+id/txt_president_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/txt_president"
+                            android:gravity="center"
+                            android:text="Sen. BUKOLA SARAKI"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <app.com.esenatenigeria.customviews.RegularTextView
+                            android:id="@+id/txt_president"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/president_of_senate"
+                            android:textColor="@color/off_white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_deputy_president"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_deputy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/deputy"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/tint_below" />
+
+                        <app.com.esenatenigeria.customviews.SemiboldTextView
+                            android:id="@+id/txt_deputy_president_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/txt_deputy_president"
+                            android:gravity="center"
+                            android:text="Sen. IKE. EKWEREMADU"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <app.com.esenatenigeria.customviews.RegularTextView
+                            android:id="@+id/txt_deputy_president"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="@string/deputy_president_of_senate"
+                            android:textColor="@color/off_white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/grey_circle_txt" />
+
+            <app.com.esenatenigeria.customviews.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/recent_activities_amp_events"
+                android:textAllCaps="true"
+                android:textColor="@color/red_dark"
+                android:textSize="@dimen/_12ssp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recent_activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_10sdp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/light_grey" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

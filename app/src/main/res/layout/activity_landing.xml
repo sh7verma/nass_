@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tool"
+            layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tool"
+            android:layout_above="@+id/bottom_bar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <include
+            android:id="@+id/bottom_bar"
+            layout="@layout/bottom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_nav_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_nav_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_20sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_20sdp"
+                        app:srcCompat="@mipmap/ic_sb_logo" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/light_grey" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_nav_senate_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_senate_leader"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:text="@string/senate_leadership"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_nav_recent_activities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_recent_activities"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/recent_activities_amp_events"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_nav_about_senate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_about_senate"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/about_the_senate"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_nav_officers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_officers"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/senator_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_nav_constitutional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_constitutional"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/constitutional_roles"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <app.com.esenatenigeria.customviews.SemiboldTextView
+                    android:id="@+id/txt_nav_compositions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_compositions"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/composition"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                   </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

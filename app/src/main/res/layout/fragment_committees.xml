@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_committee_search"
+        layout="@layout/search_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:splitMotionEvents="false"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_committees"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateDuration="@integer/progress_speed"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_no_result" />
+
+            <app.com.esenatenigeria.customviews.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/no_result_found"
+                android:textColor="@color/grey_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

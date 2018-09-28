@@ -16,8 +16,6 @@ import java.util.ArrayList;
 
 import app.com.esenatenigeria.R;
 import app.com.esenatenigeria.adapters.DashBoardRecentEventsAdapter;
-import app.com.esenatenigeria.customviews.RoundCorners;
-import app.com.esenatenigeria.customviews.RoundCornersDashboard;
 import app.com.esenatenigeria.interfaces.Interfaces;
 import app.com.esenatenigeria.model.RecentModel;
 import app.com.esenatenigeria.utils.Consts;

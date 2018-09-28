@@ -2,33 +2,24 @@ package app.com.esenatenigeria.fragments;
 
 
 import android.app.Activity;
-import android.arch.persistence.room.Room;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.squareup.picasso.NetworkPolicy;
-import com.squareup.picasso.Picasso;
 
 import app.com.esenatenigeria.R;
-import app.com.esenatenigeria.database.Db;
-import app.com.esenatenigeria.room.RoomDb;
 import app.com.esenatenigeria.utils.Connection_Detector;
-import app.com.esenatenigeria.utils.Consts;
 import app.com.esenatenigeria.utils.Encode;
 import app.com.esenatenigeria.utils.LoadingDialog;
 import app.com.esenatenigeria.utils.MarshMallowPermission;
@@ -49,11 +40,11 @@ public abstract class BaseFragment extends Fragment {
     protected String errorAPI;
     protected String errorAccessToken;
     protected String terminateAccount;
-    protected Db db;
+//    protected Db db;
     Utils utils;
     Gson mGson = new Gson();
     Encode encode;
-    RoomDb mRoomDb;
+//    RoomDb mRoomDb;
 
     private Snackbar mSnackbar;
 
@@ -70,7 +61,7 @@ public abstract class BaseFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         utils = new Utils(getActivity());
-        db = new Db(getActivity());
+//        db = new Db(getActivity());
         encode = new Encode();
         getDefaults();
         mPermission = new MarshMallowPermission(getActivity());
@@ -85,8 +76,8 @@ public abstract class BaseFragment extends Fragment {
         View view = inflater.inflate(getContentView(), container, false);
         ButterKnife.bind(BaseFragment.this, view);
         mContext = getContext();
-        mRoomDb = Room.databaseBuilder(mContext.getApplicationContext(),
-                RoomDb.class, "nass-db").allowMainThreadQueries().fallbackToDestructiveMigration().build();
+//        mRoomDb = Room.databaseBuilder(mContext.getApplicationContext(),
+//                RoomDb.class, "food_coupons-db").allowMainThreadQueries().fallbackToDestructiveMigration().build();
         initListeners();
         return view;
     }
@@ -135,7 +126,6 @@ public abstract class BaseFragment extends Fragment {
 
     public boolean connectedToInternet() {
         if ((new Connection_Detector(mContext)).isConnectingToInternet()) {
-            Consts.NO_INTERNET = false;
             return true;
         } else {
             return false;
@@ -143,24 +133,8 @@ public abstract class BaseFragment extends Fragment {
     }
 
     protected void showInternetAlert(View view) {
-        mSnackbar = Snackbar.make(view, "Internet connection not available!", Snackbar.LENGTH_SHORT);
+        mSnackbar = Snackbar.make(view, errorInternet, Snackbar.LENGTH_SHORT);
         mSnackbar.show();
-    }
-
-    void showInternetDialog() {
-        if (!Consts.NO_INTERNET) {
-            AlertDialog.Builder builder1 = new AlertDialog.Builder(mContext);
-            builder1.setMessage(mContext.getResources().getString(R.string.internet));
-            builder1.setCancelable(true);
-            builder1.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int id) {
-                    Consts.NO_INTERNET = true;
-                    dialog.cancel();
-                }
-            });
-            AlertDialog alert11 = builder1.create();
-            alert11.show();
-        }
     }
 
     public void toast(String message) {

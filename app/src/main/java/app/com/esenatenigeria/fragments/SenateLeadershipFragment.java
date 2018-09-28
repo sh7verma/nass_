@@ -3,9 +3,7 @@ package app.com.esenatenigeria.fragments;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.util.SortedList;
 import android.support.v7.widget.CardView;
-import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -14,13 +12,9 @@ import android.widget.TextView;
 
 import app.com.esenatenigeria.R;
 import app.com.esenatenigeria.model.SenatorDetailModel;
-import app.com.esenatenigeria.network.RetrofitClient;
 import app.com.esenatenigeria.utils.Consts;
 import butterknife.BindView;
 import butterknife.OnClick;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 /**
  * Created by dev on 23/4/18.
